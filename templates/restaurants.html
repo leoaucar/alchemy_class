@@ -26,10 +26,9 @@
     <p>{{i.name}}</p>
 
 
-    <a href='#'>Edit</a>
-
-    </br>
-    <a href = '#'>Delete</a>
+    <a href={{url_for('showMenu', restaurant_id=i.id)}}>Menu</a></br>
+    <a href={{url_for('editRestaurant', restaurant_id=i.id)}}>Edit</a></br>
+    <a href ={{url_for('deleteRestaurant', restaurant_id=i.id)}}>Delete</a>
 
     </div>
 
